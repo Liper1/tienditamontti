@@ -17,20 +17,20 @@ export const products = [
   // RELOJES (5 productos)
   {
     id: 1,
-    name: 'Reloj Elegante + Pulsera Morado Variante 1',
+    name: 'Reloj Elegante + Pulsera Morada Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj1.jpeg'),
-    description: 'Reloj elegante circular con pulsera morado con circones',
+    description: 'Reloj elegante circular con pulsera morada con circones',
     featured: true
   },
   {
     id: 2,
-    name: 'Reloj Elegante + Pulsera Negro Variante 1',
+    name: 'Reloj Elegante + Pulsera Negra Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj2.jpeg'),
-    description: 'Reloj elegante cuadrado con pulsera negro con circones',
+    description: 'Reloj elegante cuadrado con pulsera negra con circones',
     featured: false
   },
   {
@@ -44,20 +44,20 @@ export const products = [
   },
   {
     id: 4,
-    name: 'Reloj Elegante + Pulsera Morado Variante 2',
+    name: 'Reloj Elegante + Pulsera Morada Variante 2',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj4.jpeg'),
-    description: 'Reloj elegante cuadrado con pulsera morado con circones',
+    description: 'Reloj elegante cuadrado con pulsera morada con circones',
     featured: false
   },
   {
     id: 25,
-    name: 'Reloj Elegante + Pulsera Negro Variante 2',
+    name: 'Reloj Elegante + Pulsera Negra Variante 2',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj_pulsera_negro_variante2.jpeg'),
-    description: 'Reloj elegante circular con pulsera negro con circones',
+    description: 'Reloj elegante circular con pulsera negra con circones',
     featured: true
   },
 
