@@ -182,7 +182,7 @@ export const products = [
     featured: true
   },
 
-  // COLLARES (5 productos)
+  // COLLARES (9 productos)
   {
     id: 15,
     name: 'Collar Cinta Variante 1',
@@ -202,6 +202,33 @@ export const products = [
     featured: true
   },
   {
+    id: 28,
+    name: 'Collar Cinta Variante 3',
+    category: 'collares',
+    price: '$4.500',
+    image: getImagePath('collar_cinta3.jpeg'),
+    description: 'Collar cinta con dije de caballo de mar en acero dorado',
+    featured: true
+  },
+  {
+    id: 29,
+    name: 'Collar Cinta Variante 4',
+    category: 'collares',
+    price: '$4.500',
+    image: getImagePath('collar_cinta4.jpeg'),
+    description: 'Collar cinta con dije de trébol en acero dorado',
+    featured: false
+  },
+  {
+    id: 30,
+    name: 'Collar Cinta Variante 5',
+    category: 'collares',
+    price: '$4.500',
+    image: getImagePath('collar_cinta5.jpeg'),
+    description: 'Collar cinta con dije de cerezas en acero dorado',
+    featured: false
+  },
+  {
     id: 17,
     name: 'Collar Rose Doble',
     category: 'collares',
@@ -209,6 +236,15 @@ export const products = [
     image: getImagePath('collar_doble_1.jpeg'),
     description: 'Collar rose doble con cristales brillantes',
     featured: false
+  },
+  {
+    id: 31,
+    name: 'Collar Rose Doble Variante 2',
+    category: 'collares',
+    price: '$4.500',
+    image: getImagePath('collar_doble2.jpeg'),
+    description: 'Collar rose doble con dije de concha de mar en acero dorado',
+    featured: true
   },
   {
     id: 18,
