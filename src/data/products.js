@@ -108,7 +108,7 @@ export const products = [
     featured: false
   },
 
-  // PULSERAS (6 productos)
+  // PULSERAS (7 productos)
   {
     id: 10,
     name: 'Pulsera Dorada Variante 1',
@@ -161,6 +161,15 @@ export const products = [
     price: '$3.000',
     image: getImagePath('pulseras_van_cleef.jpeg'),
     description: 'Pulsera estilo Van Cleef en acero inoxidable premium (precio por unidad)',
+    featured: true
+  },
+  {
+    id: 26,
+    name: 'Pulseras de Hilo',
+    category: 'pulseras',
+    price: '$2.000',
+    image: getImagePath('pulseras_de_hilo.jpeg'),
+    description: 'Pulsera tejida de hilo resistente y colorida (precio por unidad)',
     featured: true
   },
 
