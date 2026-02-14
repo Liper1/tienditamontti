@@ -40,7 +40,7 @@ export const products = [
     price: '$10.000',
     image: getImagePath('reloj3.jpeg'),
     description: 'Reloj elegante circular con pulsera verde con circones',
-    featured: true
+    featured: false
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const products = [
     price: '$10.000',
     image: getImagePath('reloj_pulsera_negro_variante2.jpeg'),
     description: 'Reloj elegante circular con pulsera negra con circones',
-    featured: true
+    featured: false
   },
 
   // AROS (10 productos)
@@ -87,7 +87,7 @@ export const products = [
     price: '$2.000',
     image: getImagePath('aro3.jpeg'),
     description: 'Aros argolla elegantes de acero inoxidable pulido',
-    featured: true
+    featured: false
   },
   {
     id: 8,
@@ -132,7 +132,7 @@ export const products = [
     price: '$2.000',
     image: getImagePath('aro7.jpeg'),
     description: 'Aros cuadrados con brillos decorativos',
-    featured: true
+    featured: false
   },
   {
     id: 34,
@@ -150,7 +150,7 @@ export const products = [
     price: '$2.000',
     image: getImagePath('aro9.jpeg'),
     description: 'Aros argolla elegantes de acero inoxidable',
-    featured: true
+    featured: false
   },
 
   // PULSERAS (7 productos)
@@ -179,7 +179,7 @@ export const products = [
     price: '$3.000',
     image: getImagePath('pulsera3.jpeg'),
     description: 'Pulsera dorada de acero quirúrgico con conchas de mar',
-    featured: true
+    featured: false
   },
   {
     id: 13,
@@ -215,7 +215,7 @@ export const products = [
     price: '$2.000',
     image: getImagePath('pulseras_de_hilo.jpeg'),
     description: 'Pulsera tejida de hilo resistente y colorida (precio por unidad)',
-    featured: true
+    featured: false
   },
 
   // COLLARES (9 productos)
@@ -235,7 +235,7 @@ export const products = [
     price: '$4.500',
     image: getImagePath('collar_cinta2.jpeg'),
     description: 'Collar cinta con dije de tortuga en acero dorado',
-    featured: true
+    featured: false
   },
   {
     id: 28,
@@ -244,7 +244,7 @@ export const products = [
     price: '$4.500',
     image: getImagePath('collar_cinta3.jpeg'),
     description: 'Collar cinta con dije de caballo de mar en acero dorado',
-    featured: true
+    featured: false
   },
   {
     id: 29,
@@ -318,7 +318,7 @@ export const products = [
     price: '$7.000',
     image: getImagePath('conjunto_blanco_corazones.jpeg'),
     description: 'Set Van Cleef de 3 piezas con diseño de corazones elegante',
-    featured: true
+    featured: false
   },
   {
     id: 22,
@@ -336,7 +336,7 @@ export const products = [
     price: '$7.000',
     image: getImagePath('conjunto_negro_corazones.jpeg'),
     description: 'Set completo Van Cleef con corazones en acabado negro elegante',
-    featured: true
+    featured: false
   }
 ];
 

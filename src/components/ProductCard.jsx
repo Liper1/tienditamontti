@@ -24,21 +24,13 @@ function ProductCard({ product, index, onViewDetails }) {
         </div>
       )}
       
-      <div className="product-image-wrapper">
+      <div className="product-image-wrapper" onClick={handleViewDetails} style={{ cursor: 'pointer' }}>
         <img 
           src={product.image} 
           alt={product.name}
           loading="lazy"
           className="product-image"
         />
-        <div className="product-overlay">
-          <button 
-            className="btn-view-details"
-            onClick={handleViewDetails}
-          >
-            Ver Detalles
-          </button>
-        </div>
       </div>
       
       <div className="product-info">
