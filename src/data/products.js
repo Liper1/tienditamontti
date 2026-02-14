@@ -14,7 +14,7 @@ export const categories = [
 ];
 
 export const products = [
-  // RELOJES (4 productos)
+  // RELOJES (5 productos)
   {
     id: 1,
     name: 'Reloj con Pulsera Morado Variante 1',
@@ -50,6 +50,15 @@ export const products = [
     image: getImagePath('reloj4.jpeg'),
     description: 'Reloj clásico de acero plateado con cristal zafiro',
     featured: false
+  },
+  {
+    id: 25,
+    name: 'Reloj con Pulsera Negro Variante 2',
+    category: 'relojes',
+    price: '$10.000',
+    image: getImagePath('reloj_pulsera_negro_variante2.jpeg'),
+    description: 'Reloj elegante con pulsera negra de acero inoxidable',
+    featured: true
   },
 
   // AROS (5 productos)
