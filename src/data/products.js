@@ -17,47 +17,47 @@ export const products = [
   // RELOJES (5 productos)
   {
     id: 1,
-    name: 'Reloj con Pulsera Morado Variante 1',
+    name: 'Reloj Elegante + Pulsera Morado Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj1.jpeg'),
-    description: 'Reloj de acero inoxidable con detalles dorados, correa ajustable',
+    description: 'Reloj elegante circular con pulsera morado con circones',
     featured: true
   },
   {
     id: 2,
-    name: 'Reloj con Pulsera Negro Variante 1',
+    name: 'Reloj Elegante + Pulsera Negro Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj2.jpeg'),
-    description: 'Reloj elegante en acero negro mate, resistente al agua',
+    description: 'Reloj elegante cuadrado con pulsera negro con circones',
     featured: false
   },
   {
     id: 3,
-    name: 'Reloj con Pulsera Verde',
+    name: 'Reloj Elegante + Pulsera Verde',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj3.jpeg'),
-    description: 'Reloj deportivo de acero con cronógrafo',
+    description: 'Reloj elegante circular con pulsera verde con circones',
     featured: true
   },
   {
     id: 4,
-    name: 'Reloj con Pulsera Morado Variante 2',
+    name: 'Reloj Elegante + Pulsera Morado Variante 2',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj4.jpeg'),
-    description: 'Reloj clásico de acero plateado con cristal zafiro',
+    description: 'Reloj elegante cuadrado con pulsera morado con circones',
     featured: false
   },
   {
     id: 25,
-    name: 'Reloj con Pulsera Negro Variante 2',
+    name: 'Reloj Elegante + Pulsera Negro Variante 2',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj_pulsera_negro_variante2.jpeg'),
-    description: 'Reloj elegante con pulsera negra de acero inoxidable',
+    description: 'Reloj elegante circular con pulsera negro con circones',
     featured: true
   },
 
