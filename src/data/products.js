@@ -160,7 +160,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulseras_van_cleef.jpeg'),
-    description: 'Set de 3 pulseras estilo Van Cleef en acero inoxidable premium',
+    description: 'Pulsera estilo Van Cleef en acero inoxidable premium (precio por unidad)',
     featured: true
   },
 
