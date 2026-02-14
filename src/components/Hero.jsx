@@ -14,22 +14,30 @@ function Hero() {
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       const startPosition = window.pageYOffset;
       const distance = offsetPosition - startPosition;
-      const duration = 800; // Reducido de 1000ms a 800ms
+      
+      // Duración más corta en mobile para evitar delay
+      const isMobile = window.innerWidth <= 768;
+      const duration = isMobile ? 600 : 800;
       let start = null;
 
-      const easeInOutCubic = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t * t + b;
-        t -= 2;
-        return c / 2 * (t * t * t + 2) + b;
+      // Easing más suave y natural
+      const easeOutQuart = (t, b, c, d) => {
+        t /= d;
+        t--;
+        return -c * (t * t * t * t - 1) + b;
       };
 
       const animation = (currentTime) => {
         if (start === null) start = currentTime;
         const timeElapsed = currentTime - start;
-        const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+        const run = easeOutQuart(timeElapsed, startPosition, distance, duration);
         window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        } else {
+          // Asegurar posición final exacta
+          window.scrollTo(0, offsetPosition);
+        }
       };
 
       requestAnimationFrame(animation);

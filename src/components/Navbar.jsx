@@ -14,22 +14,29 @@ function Navbar() {
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       const startPosition = window.pageYOffset;
       const distance = offsetPosition - startPosition;
-      const duration = 800;
+      
+      // Duración más corta en mobile
+      const isMobile = window.innerWidth <= 768;
+      const duration = isMobile ? 600 : 800;
       let start = null;
 
-      const easeInOutCubic = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t * t + b;
-        t -= 2;
-        return c / 2 * (t * t * t + 2) + b;
+      // Easing más suave
+      const easeOutQuart = (t, b, c, d) => {
+        t /= d;
+        t--;
+        return -c * (t * t * t * t - 1) + b;
       };
 
       const animation = (currentTime) => {
         if (start === null) start = currentTime;
         const timeElapsed = currentTime - start;
-        const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+        const run = easeOutQuart(timeElapsed, startPosition, distance, duration);
         window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        } else {
+          window.scrollTo(0, offsetPosition);
+        }
       };
 
       requestAnimationFrame(animation);
@@ -40,22 +47,29 @@ function Navbar() {
   const scrollToTop = () => {
     const startPosition = window.pageYOffset;
     const distance = -startPosition;
-    const duration = 800;
+    
+    // Duración más corta en mobile
+    const isMobile = window.innerWidth <= 768;
+    const duration = isMobile ? 600 : 800;
     let start = null;
 
-    const easeInOutCubic = (t, b, c, d) => {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t * t + b;
-      t -= 2;
-      return c / 2 * (t * t * t + 2) + b;
+    // Easing más suave
+    const easeOutQuart = (t, b, c, d) => {
+      t /= d;
+      t--;
+      return -c * (t * t * t * t - 1) + b;
     };
 
     const animation = (currentTime) => {
       if (start === null) start = currentTime;
       const timeElapsed = currentTime - start;
-      const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+      const run = easeOutQuart(timeElapsed, startPosition, distance, duration);
       window.scrollTo(0, run);
-      if (timeElapsed < duration) requestAnimationFrame(animation);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      } else {
+        window.scrollTo(0, 0);
+      }
     };
 
     requestAnimationFrame(animation);
