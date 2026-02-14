@@ -68,7 +68,7 @@ export const products = [
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro1.jpeg'),
-    description: 'Aros circulares medianos en acero dorado brillante',
+    description: 'Aros argolla pareja en acero dorado brillante',
     featured: true
   },
   {
@@ -77,7 +77,7 @@ export const products = [
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro2.jpeg'),
-    description: 'Aros pequeños con detalle de perla sintética',
+    description: 'Aros argolla con diseño de ancla',
     featured: false
   },
   {
@@ -86,7 +86,7 @@ export const products = [
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro3.jpeg'),
-    description: 'Argollas grandes de acero inoxidable pulido',
+    description: 'Aros argolla elegantes de acero inoxidable pulido',
     featured: true
   },
   {
@@ -104,7 +104,7 @@ export const products = [
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro5.jpeg'),
-    description: 'Aros con diseño geométrico minimalista',
+    description: 'Aros argolla con diseño de corazón',
     featured: false
   },
   {
@@ -124,7 +124,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera1.jpeg'),
-    description: 'Pulsera de cadena delgada en acero dorado',
+    description: 'Pulsera dorada de acero quirúrgico con diseño spiral',
     featured: true
   },
   {
@@ -133,7 +133,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera2.jpeg'),
-    description: 'Pulsera de eslabones anchos estilo cubano',
+    description: 'Pulsera dorada de acero quirúrgico con estrellas de mar',
     featured: false
   },
   {
@@ -142,7 +142,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera3.jpeg'),
-    description: 'Pulsera delicada con dije de corazón',
+    description: 'Pulsera dorada de acero quirúrgico con conchas de mar',
     featured: true
   },
   {
@@ -151,7 +151,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera4.jpeg'),
-    description: 'Brazalete rígido en acero dorado brillante',
+    description: 'Pulsera dorada de acero quirúrgico con peces',
     featured: false
   },
   {
@@ -160,7 +160,7 @@ export const products = [
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera5.jpeg'),
-    description: 'Pulsera con triple cadena entrelazada',
+    description: 'Pulsera dorada de acero quirúrgico con mariposas',
     featured: false
   },
   {
