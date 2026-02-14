@@ -9,10 +9,30 @@ function Hero() {
     e.preventDefault();
     const productsSection = document.getElementById('products');
     if (productsSection) {
-      productsSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
+      const headerOffset = 100;
+      const elementPosition = productsSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const startPosition = window.pageYOffset;
+      const distance = offsetPosition - startPosition;
+      const duration = 800; // Reducido de 1000ms a 800ms
+      let start = null;
+
+      const easeInOutCubic = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t * t + b;
+        t -= 2;
+        return c / 2 * (t * t * t + 2) + b;
+      };
+
+      const animation = (currentTime) => {
+        if (start === null) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      };
+
+      requestAnimationFrame(animation);
     }
   };
 
