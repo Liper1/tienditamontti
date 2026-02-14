@@ -61,7 +61,7 @@ export const products = [
     featured: true
   },
 
-  // AROS (6 productos)
+  // AROS (10 productos)
   {
     id: 5,
     name: 'Aros Argolla Variante 1',
@@ -114,6 +114,42 @@ export const products = [
     price: '$2.000',
     image: getImagePath('aros_brillosos.jpeg'),
     description: 'Aros con acabado brillante y cristales decorativos (precio por unidad)',
+    featured: true
+  },
+  {
+    id: 32,
+    name: 'Aros Argolla Variante 6',
+    category: 'aros',
+    price: '$2.000',
+    image: getImagePath('aro6.jpeg'),
+    description: 'Aros argolla con diseño geométrico moderno',
+    featured: false
+  },
+  {
+    id: 33,
+    name: 'Aros Argolla Variante 7',
+    category: 'aros',
+    price: '$2.000',
+    image: getImagePath('aro7.jpeg'),
+    description: 'Aros cuadrados con brillos decorativos',
+    featured: true
+  },
+  {
+    id: 34,
+    name: 'Aros Argolla Variante 8',
+    category: 'aros',
+    price: '$2.000',
+    image: getImagePath('aro8.jpeg'),
+    description: 'Aros argolla con pelotitas brillantes',
+    featured: false
+  },
+  {
+    id: 35,
+    name: 'Aros Argolla Variante 9',
+    category: 'aros',
+    price: '$2.000',
+    image: getImagePath('aro9.jpeg'),
+    description: 'Aros argolla elegantes de acero inoxidable',
     featured: true
   },
 
