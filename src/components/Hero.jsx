@@ -9,28 +9,10 @@ function Hero() {
     e.preventDefault();
     const productsSection = document.getElementById('products');
     if (productsSection) {
-      const targetPosition = productsSection.offsetTop - 80;
-      const startPosition = window.pageYOffset;
-      const distance = targetPosition - startPosition;
-      const duration = 1000;
-      let start = null;
-
-      const animation = (currentTime) => {
-        if (start === null) start = currentTime;
-        const timeElapsed = currentTime - start;
-        const run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      };
-
-      const ease = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-      };
-
-      requestAnimationFrame(animation);
+      productsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
@@ -73,7 +55,7 @@ function Hero() {
         {/* Stats minimalistas */}
         <div className="hero-stats">
           <div className="stat-item">
-            <span className="stat-number">23+</span>
+            <span className="stat-number">35+</span>
             <span className="stat-label">Productos</span>
           </div>
           <div className="stat-divider"></div>
