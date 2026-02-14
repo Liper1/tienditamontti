@@ -102,7 +102,7 @@ export const products = [
   // PULSERAS (5 productos)
   {
     id: 10,
-    name: 'Pulsera Cadena Fina',
+    name: 'Pulsera Dorada Variante 1',
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera1.jpeg'),
@@ -111,7 +111,7 @@ export const products = [
   },
   {
     id: 11,
-    name: 'Pulsera Eslabones Gruesa',
+    name: 'Pulsera Dorada Variante 2',
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera2.jpeg'),
@@ -120,7 +120,7 @@ export const products = [
   },
   {
     id: 12,
-    name: 'Pulsera Dije Corazón',
+    name: 'Pulsera Dorada Variante 3',
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera3.jpeg'),
@@ -129,7 +129,7 @@ export const products = [
   },
   {
     id: 13,
-    name: 'Pulsera Rígida Gold',
+    name: 'Pulsera Dorada Variante 4',
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera4.jpeg'),
@@ -138,7 +138,7 @@ export const products = [
   },
   {
     id: 14,
-    name: 'Pulsera Triple Cadena',
+    name: 'Pulsera Dorada Variante 5',
     category: 'pulseras',
     price: '$3.000',
     image: getImagePath('pulsera5.jpeg'),
