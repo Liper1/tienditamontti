@@ -14,11 +14,21 @@ function Navbar() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMobileMenuOpen(false);
+  };
+
+  const openWhatsApp = () => {
+    window.open('https://wa.me/56987670078?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20sus%20productos', '_blank');
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar ${scrolled || mobileMenuOpen ? 'navbar-scrolled' : ''}`}>
       <div className="container">
         <div className="navbar-content">
-          <div className="nav-brand">
+          <div className="nav-brand" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
             <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} alt="Tiendita Montti" className="brand-logo" />
             <h2>Tiendita Montti</h2>
           </div>
@@ -27,7 +37,7 @@ function Navbar() {
           <ul className="nav-menu desktop-menu">
             <li><a onClick={() => scrollToSection('home')}>Inicio</a></li>
             <li><a onClick={() => scrollToSection('products')}>Productos</a></li>
-            <li><a onClick={() => scrollToSection('contact')}>Contacto</a></li>
+            <li><a onClick={openWhatsApp}>Contacto</a></li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -55,7 +65,7 @@ function Navbar() {
           <ul>
             <li><a onClick={() => scrollToSection('home')}>Inicio</a></li>
             <li><a onClick={() => scrollToSection('products')}>Productos</a></li>
-            <li><a onClick={() => scrollToSection('contact')}>Contacto</a></li>
+            <li><a onClick={openWhatsApp}>Contacto</a></li>
           </ul>
         </div>
       </div>
