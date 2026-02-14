@@ -17,7 +17,7 @@ export const products = [
   // RELOJES (4 productos)
   {
     id: 1,
-    name: 'Reloj Minimalista Gold',
+    name: 'Reloj con Pulsera Morado Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj1.jpeg'),
@@ -26,7 +26,7 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Reloj Clásico Negro',
+    name: 'Reloj con Pulsera Negro Variante 1',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj2.jpeg'),
@@ -35,7 +35,7 @@ export const products = [
   },
   {
     id: 3,
-    name: 'Reloj Deportivo Premium',
+    name: 'Reloj con Pulsera Verde',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj3.jpeg'),
@@ -44,7 +44,7 @@ export const products = [
   },
   {
     id: 4,
-    name: 'Reloj Elegante Plateado',
+    name: 'Reloj con Pulsera Morado Variante 2',
     category: 'relojes',
     price: '$10.000',
     image: getImagePath('reloj4.jpeg'),
