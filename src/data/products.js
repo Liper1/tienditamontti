@@ -61,7 +61,7 @@ export const products = [
     featured: true
   },
 
-  // AROS (5 productos)
+  // AROS (6 productos)
   {
     id: 5,
     name: 'Aros Argolla Variante 1',
@@ -106,6 +106,15 @@ export const products = [
     image: getImagePath('aro5.jpeg'),
     description: 'Aros con diseño geométrico minimalista',
     featured: false
+  },
+  {
+    id: 27,
+    name: 'Aros Brillantes',
+    category: 'aros',
+    price: '$2.000',
+    image: getImagePath('aros_brillosos.jpeg'),
+    description: 'Aros con acabado brillante y cristales decorativos (precio por unidad)',
+    featured: true
   },
 
   // PULSERAS (7 productos)
