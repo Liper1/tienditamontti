@@ -55,7 +55,7 @@ export const products = [
   // AROS (5 productos)
   {
     id: 5,
-    name: 'Aros Circulares Gold',
+    name: 'Aros Argolla Variante 1',
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro1.jpeg'),
@@ -64,7 +64,7 @@ export const products = [
   },
   {
     id: 6,
-    name: 'Aros Mini Perla',
+    name: 'Aros Argolla Variante 2',
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro2.jpeg'),
@@ -73,7 +73,7 @@ export const products = [
   },
   {
     id: 7,
-    name: 'Aros Argolla Grande',
+    name: 'Aros Argolla Variante 3',
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro3.jpeg'),
@@ -82,7 +82,7 @@ export const products = [
   },
   {
     id: 8,
-    name: 'Aros Colgantes Elegantes',
+    name: 'Aros Argolla Variante 4',
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro4.jpeg'),
@@ -91,7 +91,7 @@ export const products = [
   },
   {
     id: 9,
-    name: 'Aros Geométricos',
+    name: 'Aros Argolla Variante 5',
     category: 'aros',
     price: '$2.000',
     image: getImagePath('aro5.jpeg'),
@@ -149,7 +149,7 @@ export const products = [
   // COLLARES (5 productos)
   {
     id: 15,
-    name: 'Collar Minimalista Fino',
+    name: 'Collar Cinta Variante 1',
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_cinta1.jpeg'),
@@ -158,7 +158,7 @@ export const products = [
   },
   {
     id: 16,
-    name: 'Collar Colgante Corazón',
+    name: 'Collar Cinta Variante 2',
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_cinta2.jpeg'),
@@ -167,7 +167,7 @@ export const products = [
   },
   {
     id: 17,
-    name: 'Collar Cadena Gruesa',
+    name: 'Collar Rose Doble',
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_doble_1.jpeg'),
@@ -176,7 +176,7 @@ export const products = [
   },
   {
     id: 18,
-    name: 'Collar Perla Elegante',
+    name: 'Collar Triple Variante 1',
     category: 'collares',
     price: '$3.500',
     image: getImagePath('collar_triple_variante1.jpeg'),
@@ -185,7 +185,7 @@ export const products = [
   },
   {
     id: 19,
-    name: 'Collar Capas Dorado',
+    name: 'Collar Triple Variante 2',
     category: 'collares',
     price: '$3.500',
     image: getImagePath('collar_triple_variante2.jpeg'),
