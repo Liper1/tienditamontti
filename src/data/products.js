@@ -189,7 +189,7 @@ export const products = [
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_cinta1.jpeg'),
-    description: 'Collar de cadena fina simple y elegante',
+    description: 'Collar cinta marino de acero inoxidable elegante',
     featured: true
   },
   {
@@ -198,7 +198,7 @@ export const products = [
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_cinta2.jpeg'),
-    description: 'Collar con dije de corazón en acero dorado',
+    description: 'Collar cinta con dije de tortuga en acero dorado',
     featured: true
   },
   {
@@ -207,7 +207,7 @@ export const products = [
     category: 'collares',
     price: '$4.500',
     image: getImagePath('collar_doble_1.jpeg'),
-    description: 'Collar de eslabones medianos estilo moderno',
+    description: 'Collar rose doble con cristales brillantes',
     featured: false
   },
   {
