@@ -2,8 +2,6 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Products from './components/Products'
-import About from './components/About'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import './App.css'
@@ -14,8 +12,6 @@ function App() {
       <Navbar />
       <Hero />
       <Products />
-      <About />
-      <Contact />
       <Footer />
       <WhatsAppButton />
     </div>
