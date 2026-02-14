@@ -99,7 +99,7 @@ export const products = [
     featured: false
   },
 
-  // PULSERAS (5 productos)
+  // PULSERAS (6 productos)
   {
     id: 10,
     name: 'Pulsera Dorada Variante 1',
@@ -144,6 +144,15 @@ export const products = [
     image: getImagePath('pulsera5.jpeg'),
     description: 'Pulsera con triple cadena entrelazada',
     featured: false
+  },
+  {
+    id: 24,
+    name: 'Pulseras Van Cleef',
+    category: 'pulseras',
+    price: '$3.000',
+    image: getImagePath('pulseras_van_cleef.jpeg'),
+    description: 'Set de 3 pulseras estilo Van Cleef en acero inoxidable premium',
+    featured: true
   },
 
   // COLLARES (5 productos)
