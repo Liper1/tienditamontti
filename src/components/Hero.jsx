@@ -12,35 +12,12 @@ function Hero() {
       const headerOffset = 100;
       const elementPosition = productsSection.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      const startPosition = window.pageYOffset;
-      const distance = offsetPosition - startPosition;
       
-      // Duración más corta en mobile para evitar delay
-      const isMobile = window.innerWidth <= 768;
-      const duration = isMobile ? 600 : 800;
-      let start = null;
-
-      // Easing más suave y natural
-      const easeOutQuart = (t, b, c, d) => {
-        t /= d;
-        t--;
-        return -c * (t * t * t * t - 1) + b;
-      };
-
-      const animation = (currentTime) => {
-        if (start === null) start = currentTime;
-        const timeElapsed = currentTime - start;
-        const run = easeOutQuart(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        } else {
-          // Asegurar posición final exacta
-          window.scrollTo(0, offsetPosition);
-        }
-      };
-
-      requestAnimationFrame(animation);
+      // Usar scroll nativo smooth - más confiable en iOS Safari
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
