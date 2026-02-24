@@ -703,3 +703,24 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* ===================================
+   LOADING STATE
+   ================================ */
+
+.loading-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  min-height: 300px;
+}
+
+.loading-products p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getProductsByCategory } from '../data/products';
+import { fetchProducts, fetchProductsByCategory } from '../lib/supabase';
 import CategoryFilter from './CategoryFilter';
 import ProductCard from './ProductCard';
 import ProductDetail from './ProductDetail';
@@ -8,17 +8,31 @@ import '../styles/animations.css';
 
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [titleRef, titleRevealed] = useScrollReveal({ threshold: 0.1 });
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  
-  const filteredProducts = getProductsByCategory(selectedCategory);
+
+  // Cargar productos iniciales
+  useEffect(() => {
+    loadProducts('all');
+  }, []);
+
+  // Cargar productos por categoría
+  const loadProducts = async (categoryId) => {
+    setLoading(true);
+    const data = await fetchProductsByCategory(categoryId);
+    setProducts(data);
+    setLoading(false);
+  };
 
   // Animación al cambiar categoría
   const handleCategoryChange = (newCategory) => {
     setIsTransitioning(true);
     setTimeout(() => {
       setSelectedCategory(newCategory);
+      loadProducts(newCategory);
       setIsTransitioning(false);
     }, 300);
   };
@@ -26,13 +40,13 @@ function Products() {
   // Abrir detalle de producto
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    document.body.style.overflow = 'hidden'; // Bloquear scroll del body
+    document.body.style.overflow = 'hidden';
   };
 
   // Cerrar detalle de producto
   const handleCloseDetail = () => {
     setSelectedProduct(null);
-    document.body.style.overflow = 'unset'; // Restaurar scroll
+    document.body.style.overflow = 'unset';
   };
 
   return (
@@ -55,9 +69,14 @@ function Products() {
         />
 
         <div className="products-grid-wrapper">
-          {filteredProducts.length > 0 ? (
+          {loading ? (
+            <div className="loading-products">
+              <div className="loading-spinner"></div>
+              <p>Cargando productos...</p>
+            </div>
+          ) : products.length > 0 ? (
             <div className={`products-grid ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
-              {filteredProducts.map((product, index) => (
+              {products.map((product, index) => (
                 <ProductCard 
                   key={product.id} 
                   product={product}

@@ -1,10 +1,24 @@
-import React from 'react';
-import { categories } from '../data/products';
+import React, { useState, useEffect } from 'react';
+import { fetchCategories } from '../lib/supabase';
 import { useScrollReveal } from '../hooks/useScrollAnimation';
 import '../styles/animations.css';
 
 function CategoryFilter({ selectedCategory, onCategoryChange }) {
+  const [categories, setCategories] = useState([
+    { id: 'all', name: 'Todos', icon: '', color: '#d4af37' }
+  ]);
   const [ref, isRevealed] = useScrollReveal({ threshold: 0.2 });
+
+  useEffect(() => {
+    loadCategories();
+  }, []);
+
+  const loadCategories = async () => {
+    const data = await fetchCategories();
+    if (data.length > 0) {
+      setCategories(data);
+    }
+  };
 
   return (
     <div 
